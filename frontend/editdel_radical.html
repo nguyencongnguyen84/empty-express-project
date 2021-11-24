@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Learner | Modifier/Supprimer un radical</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="static/js/editdel_radical.js"></script>
+
+    <link rel="stylesheet" href="static/css/master.css">
+</head>
+<body class="grey flex-center">
+    <div class="header"></div>   
+    <div class="round-form-container">
+        <h1>Modifier/Supprimer un radical</h1>
+
+        <div class="select-box">
+            
+            <label for="toEdit">Radical à modifier/supprimer :</label>
+            <select id="toEdit">
+            </select>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="rad" name="" required />
+            <label for="rad">Radical</label>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="meaning" name="" required />
+            <label for="meaning">Signification</label>
+        </div>
+
+        <div class="solo-checkbox-box">
+            <label for="del">Supprimer : </label>
+            <input type="checkbox" id="del" name="" />
+        </div>
+
+       
+
+
+        <input type="submit" onclick="editDelRadical()" class="final-submit" value="Ajouter">
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Learner | Quizz</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="static/js/quizz_radical.js"></script>
+
+    <link rel="stylesheet" href="static/css/master.css">
+</head>
+<body class="grey flex-center">
+    <div class="header"></div>   
+    <div id="container" class="round-form-container">
+        <h1>Quizz</h1>
+
+        <div class="select-box">
+            
+            <label for="sens">Sens des questions :</label>
+            <select id="sens">
+                <option value="fr-jp">Français - Japonais</option>
+                <option value="jp-fr">Japonais - Français</option>
+            </select>
+        </div>
+
+        <div class="number-box">
+            
+            <label for="nb">Nombre de questions :</label>
+            <input type="number" min="5" max="500" name="nb" id="nb">
+        </div>
+
+        <div class="solo-checkbox-box">
+            <label for="del">Tout voir : </label>
+            <input type="checkbox" id="seeAll" name="" />
+        </div>
+
+        <!-- <div class="quizzContainer">
+
+            
+            <h2>水 ( 氵- 氺 )</h2>
+
+            <input onclick="check(this)" type="button" value="1">
+            <input onclick="check(this)" type="button" value="2">
+            <input onclick="check(this)" type="button" value="3">
+            <input onclick="check(this)" type="button" value="4">
+
+        </div> -->
+       
+
+
+        <input type="submit" onclick="startQuizz()" class="final-submit" value="Commencer le quizz">
+    </div>
+    
+</body>
+</html>

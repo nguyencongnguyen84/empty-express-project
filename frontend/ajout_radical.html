@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Learner | Ajouter un radical</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/js/ajout_radical.js"></script>
+
+    <link rel="stylesheet" href="static/css/master.css">
+</head>
+<body class="grey flex-center">
+    <div class="header"></div>   
+    <div class="round-form-container">
+        <h1>Ajouter un radical</h1>
+
+        <div class="input-box">
+            <input type="text" id="rad" name="" required />
+            <label for="">Radical</label>
+        </div>
+
+        <div class="input-box">
+            <input type="text" id="meaning" name="" required />
+            <label for="">Signification</label>
+        </div>
+
+       
+
+
+        <input type="submit" onclick="addRadical()" class="final-submit" value="Ajouter">
+    </div>
+    
+</body>
+</html>
