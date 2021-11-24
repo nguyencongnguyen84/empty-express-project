@@ -8,4 +8,4 @@ then you can boot the node server on the 3000 port
 ```shell
 node server
 ```
-test with {http://localhost:3000/api/example/test}
+test with http://localhost:3000/api/example/test
