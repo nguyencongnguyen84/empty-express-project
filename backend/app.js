@@ -1,16 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://KanjiLearner:KanjiLearner00@cluster0.hlmzy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
-  { useNewUrlParser: true,
-    useUnifiedTopology: true })
-  .then(() => console.log('Connexion à MongoDB réussie !'))
-  .catch(() => console.log('Connexion à MongoDB échouée !'));
 
-const kanjiRoutes = require('./routes/kanji');
-const quizzRoutes = require('./routes/quizz');
-const usersRoutes = require('./routes/users');
-const radicalRoutes = require('./routes/radical');
+/**
+ * Connection BDD ici
+ */
+
+
+const exampleRoutes = require('./routes/example');
 
 const app = express();
 
@@ -24,10 +20,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-app.use("/api/kanji", kanjiRoutes);
-app.use("/api/quizz", quizzRoutes);
-app.use("/api/auth", usersRoutes);
-app.use("/api/radical", radicalRoutes);
+app.use("/api/example", exampleRoutes);
 
 
 
