@@ -27,7 +27,7 @@ app.post('/generate-jwt', (req, res) => {
 
     const payload = {
       sub: email,
-      qsh,
+      qsh: qsh,
       iss: accessKey,
       exp: Math.floor(Date.now() / 1000) + 3600
     };
